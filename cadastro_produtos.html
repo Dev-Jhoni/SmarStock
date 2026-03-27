@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+  </head>
+  
+  <body>
+    
+    <header>
+  <nav>
+    <button type="button">☰</button>
+    <form>
+      <input type="text" placeholder="Pesquisar produtos...">
+      <button type="submit">Buscar</button>
+    </form>
+    <div>
+      <a href="#">Perfil</a>
+    </div>
+  </nav>
+</header>
+    
+    <main>
+      <section>
+        <h1>Cadastro de produtos</h1>
+        
+        <form>
+          
+          <fieldset>
+            <legend>Dados dos produtos</legend>
+            
+            <label for="nome_produto">Nome dos produtos</label>
+            <input type="text" id="nome_produto" placeholder="Digite o nome do produto">
+          </fieldset>
+          
+          <fieldset>
+            <legend>Estoque</legend>
+            
+            <label for="Quantidade">Quantidade</label>
+            <input type="number" id="Quantidade" placeholder="Ex: 10" min="0">
+          </fieldset>
+          
+          <fieldset>
+            <legend>Preço</legend>
+            
+            <label for="Preco_custo">Preço de custo</label>
+            <input type="number" id="Preco_custo" placeholder="Ex:19,90" step="0.01" min="0">
+            
+            <label for="preco_venda">Preço de venda</label>
+            <input type="number" id="preco_venda" placeholder="Ex: 25,50" step="0.01" min="0">
+          </fieldset>
+          
+          <button type="submit">Salvar</button>
+          <button type="button">Cancelar</button>
+          
+        </form>
+        
+      </section>
+    </main>
+  </body>
+  
+</html>
